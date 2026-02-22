@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "Guidaldi",
+  "version": "1.0",
+  "description": "Nuova scheda personalizzata",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}

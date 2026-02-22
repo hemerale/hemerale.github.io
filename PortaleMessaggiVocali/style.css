@@ -1,0 +1,130 @@
+:root{
+  --bg:#f6fff7;
+  --card:#ffffff;
+  --accent-start:#12b886;
+  --accent-end:#06a77b;
+  --muted:#6b7768;
+  --glass: rgba(255,255,255,0.6);
+  --radius:14px;
+  --shadow: 0 8px 30px rgba(10,20,10,0.06);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  background: linear-gradient(180deg, #f1fff6 0%, #eefef6 100%);
+  color:#0e2b20;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh;
+  padding:20px;
+}
+
+.card{
+  width:100%;
+  max-width:760px;
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:24px;
+  box-shadow:var(--shadow);
+  border: 1px solid rgba(8,40,20,0.04);
+}
+
+h1{margin:0 0 8px 0; font-size:20px}
+p.lead{margin:0 0 18px 0; color:var(--muted)}
+
+.controls{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+button.btn{
+  appearance:none;
+  border:0;
+  padding:10px 16px;
+  border-radius:12px;
+  font-weight:600;
+  cursor:pointer;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  box-shadow: 0 6px 18px rgba(8,40,20,0.06);
+  transition: transform .12s ease, box-shadow .12s ease, opacity .12s ease;
+}
+
+button.primary{
+  background: linear-gradient(90deg,var(--accent-start),var(--accent-end));
+  color:white;
+}
+button.ghost{
+  background:transparent;
+  border:1px solid rgba(8,40,20,0.06);
+  color:var(--accent-end);
+}
+button.danger{
+  background: #ffecec;
+  color: #9b2b2b;
+}
+
+button.btn:active{ transform: translateY(1px) }
+button[disabled]{ opacity:0.5; cursor:not-allowed; transform:none }
+
+.panel{
+  display:flex;
+  gap:18px;
+  margin-top:18px;
+  align-items:flex-start;
+  flex-wrap:wrap;
+}
+
+.left{
+  flex:1 1 360px;
+  min-width:260px;
+}
+.right{
+  width:240px;
+  min-width:200px;
+}
+
+canvas#wave{
+  width:100%;
+  height:90px;
+  border-radius:10px;
+  background: linear-gradient(180deg, #f7fff9, #eefdf6);
+  border:1px solid rgba(8,40,20,0.03);
+  display:block;
+}
+
+#timer{
+  margin-top:10px;
+  font-weight:700;
+  color:var(--accent-end);
+  letter-spacing:0.6px;
+}
+
+audio#player{
+  width:100%;
+  margin-top:12px;
+  border-radius:8px;
+  outline:none;
+}
+
+#status{
+  margin-top:12px;
+  color:#0a6b49;
+  font-weight:600;
+}
+
+.meta{
+  font-size:13px;
+  color:var(--muted);
+  margin-top:8px;
+}
+
+@media (max-width:700px){
+  .right{ width:100% }
+  .controls{ width:100% }
+}

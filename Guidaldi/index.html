@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Guidaldi</title>
+    <script src="script.js"></script>
+</head>
+<body>
+
+<center>
+    <!-- METEO -->
+    <div class="weather">
+        <img src="images/weather.png" width="60px" height="60px">
+        <img src="https://hemeraleback.github.io/Links/images/blank.webp" width="15px" height="1px">
+        <p id="temp"></p>
+    </div>
+
+    <div id="clock" class="clock"></div> <!-- ORARIO -->
+    <div id="data" class="data"></div> <!-- DATA -->
+
+    <br>
+
+    <!-- BARRA DI RICERCA -->
+    <form method="GET" action="https://www.google.com/search">
+        <input type="text" class="searchbar" name="q" id="searchbar" spellcheck="false" placeholder="What are you looking for?">
+    </form>
+
+    <table>
+        <tr>
+            <!-- W3SCHOOLS -->
+            <td><button class="box" data-link="https://www.w3schools.com/"><img src="images/w3schools.ico" class="ibtn"></button></td>
+            
+            <!-- GITHUB -->
+            <td><button class="box" data-link="https://www.github.com/hemerale"><img src="images/github.png" class="ibtn"></button></td>
+            
+            <!-- INSTAGRAM -->
+            <td><button class="box" data-link="https://www.instagram.com/"><img src="images/instagram.png" class="ibtn"></button></td>
+            
+            <!-- WHATSAPP -->
+            <td><button class="box" data-link="https://web.whatsapp.com"><img src="images/whatsapp.png" class="ibtn"></button></td>
+        </tr>
+        <tr>
+            <!-- GMAIL -->
+            <td><button class="box" data-link="https://mail.google.com/mail/u/0/#inbox"><img src="images/gmail.ico" class="ibtn"></button></td>
+            
+            <!-- YOUTUBE -->
+            <td><button class="box" data-link="https://www.youtube.com/"><img src="images/youtube.png" class="ibtn"></button></td>
+            
+            <!-- CHATGPT -->
+            <td><button class="box" data-link="https://chatgpt.com/"><img src="images/chatgpt.png" class="ibtn"></button></td>
+            
+            <!-- -->
+            <td><button class="box"><img src="images/blank.png" class="ibtn"></button></td>
+        </tr>
+    </table>
+</center>
+
+
+</body>
+</html>
