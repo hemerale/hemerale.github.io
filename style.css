@@ -959,7 +959,7 @@ main {
   }
 
   .hero-visual {
-    min-height: 18rem;
+    display: none;
   }
 
   .hero-avatar-shell {
