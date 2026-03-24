@@ -1,467 +1,413 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Carmelo Alessandro - Full-Stack Developer specializzato in AI, API Integration e Robotica. Progetti su Python, Node.js, IoT. Pronto per collaborazioni e assunzioni.">
-    <meta name="keywords" content="full-stack developer, Python, Node.js, AI, API integration, robotica, IoT, discord bot, web development">
-    <meta name="author" content="Carmelo Alessandro">
-    <meta name="theme-color" content="#6366f1">
-    <meta property="og:title" content="Carmelo Alessandro - Full-Stack Developer | AI & Automation">
-    <meta property="og:description" content="Da scanner per musei a bot Discord scalabili. Sviluppo sistemi software complessi con focus su AI integration e API.">
-    <meta property="og:type" content="website">
-    
-    <!-- Canonical + robots -->
-    <link rel="canonical" href="https://hemerale.github.io">
-    <meta name="robots" content="index, follow">
-    
-    <!-- JSON-LD Schema (Developer Profile) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Carmelo Alessandro",
-      "jobTitle": "Full-Stack Software Developer",
-      "url": "https://hemerale.github.io",
-      "sameAs": [
-        "https://github.com/hemerale",
-        "https://www.linkedin.com/in/carmelo-alessandro-922814395/",
-        "https://instagram.com/hemeralee"
-      ],
-      "email": "heme.alessandro@gmail.com",
-      "skills": ["Python", "JavaScript", "Node.js", "AI Integration", "REST API", "Robotica", "IoT"],
-      "knowsAbout": ["Full-Stack Development", "Artificial Intelligence", "API Integration", "Embedded Systems"]
-    }
-    </script>
-    
-    <title>hemerale</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C. Alessandro</title>
+  <meta name="description" content="Full-Stack Developer specializzato in Python, Node.js, AI integration e API. Progetti open source, bot Discord, web app scalabili.">
+  <meta name="author" content="Carmelo Alessandro">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-menu" id="navMenu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about-me" class="nav-link">Chi Sono</a>
-                <a href="#skills" class="nav-link">Competenze</a>
-                <a href="#projects" class="nav-link">Progetti</a>
-                <a href="#contact" class="nav-link">Contatti</a>
-                <a href="CV.pdf" class="nav-link nav-cta">Scarica CV</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="#top">
+          <span class="brand-mark">CA</span>
+          <span class="brand-copy">
+            <strong>Carmelo Alessandro</strong>
+            <small>Full-Stack Developer</small>
+          </span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Apri menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-menu" id="site-menu">
+          <a href="#about">Chi Sono</a>
+          <a href="#skills">Competenze</a>
+          <a href="#projects">Progetti</a>
+          <a href="#contact">Contatti</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal visible">
+            <p class="hero-badge">Full-Stack Developer</p>
+            <h1>Costruisco sistemi software che <span class="text-highlight">risolvono problemi complessi</span></h1>
+            <p class="hero-text">
+              Da portali audio integrati a bot Discord scalabili: Python, Node.js, AI integration e API.
+            </p>
+
+            <div class="mobile-pills">
+              <span class="glass-pill">Python</span>
+              <span class="glass-pill">Node.js</span>
+              <span class="glass-pill">AI / APIs</span>
             </div>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">Vedi i miei progetti &rarr;</a>
+              <a class="button button-secondary" href="#contact">Contattami</a>
             </div>
+
+            <div class="hero-stats">
+              <div class="stat-card">
+                <strong>7+</strong>
+                <span>Progetti coordinati</span>
+              </div>
+              <div class="stat-card">
+                <strong>9+</strong>
+                <span>Linguaggi di programmazione</span>
+              </div>
+              <div class="stat-card">
+                <strong>100%</strong>
+                <span>Open source</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal visible">
+            <div class="hero-avatar-shell">
+              <div class="hero-avatar-ring"></div>
+              <div class="hero-avatar-core">
+              </div>
+            </div>
+            <div class="floating-card card-top">
+              <span class="floating-icon">&#128013;</span>
+              <span>Python</span>
+            </div>
+            <div class="floating-card card-middle">
+              <span class="floating-icon">&#9881;&#65039;</span>
+              <span>Node.js</span>
+            </div>
+            <div class="floating-card card-bottom">
+              <span class="floating-icon">&#129302;</span>
+              <span>AI/APIs</span>
+            </div>
+          </div>
         </div>
-    </nav>
+      </section>
 
-    <!-- HERO SECTION -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <br><div class="hero-badge">Full-Stack Developer</div>
-                <h1 class="hero-title">Costruisco sistemi software che <span class="highlight">risolvono problemi complessi</span></h1>
-                <p class="hero-subtitle">Da portali audio integrati a bot Discord scalabili: Python, Node.js, AI integration e API</p>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">Vedi i miei progetti →</a>
-                    <a href="#contact" class="btn btn-secondary">Contattami</a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number">7+</span>
-                        <span class="stat-label">Progetti coordinati</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">9+</span>
-                        <span class="stat-label">Linguaggi di programmazione</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">Open source</span>
-                    </div>
-                </div>
+      <section class="section" id="about">
+        <div class="container">
+          <h2 class="section-title reveal">Chi Sono</h2>
+          <article class="glass-card about-card reveal">
+            <img src="images/pic.jpeg" alt="Carmelo Alessandro">
+            <div>
+              <h3>Carmelo Alessandro</h3>
+              <p class="role">Full-Stack Developer | AI &amp; Automation Specialist</p>
+              <div class="about-accent-row">
+                <span class="about-chip">Python</span>
+                <span class="about-chip">AI Integration</span>
+                <span class="about-chip">API Systems</span>
+              </div>
+              <div class="about-detail-grid">
+                <article class="about-detail-card">
+                  <span class="about-label">Focus</span>
+                  <p>
+                    Sviluppatore full-stack con <strong>focus su problemi reali</strong>: da portali
+                    web per messaggi vocali a sistemi API scalabili, bot intelligenti e piattaforme
+                    production-ready.
+                  </p>
+                </article>
+                <article class="about-detail-card">
+                  <span class="about-label">Specializzazione</span>
+                  <p>
+                    Web Development, AI Integration, REST API, automazione software, sistemi embedded.
+                    Fluente in Python, JavaScript/Node.js, Java, C/C++. Esperienza con LLM/AI API.
+                  </p>
+                </article>
+                <article class="about-detail-card">
+                  <span class="about-label">Formazione</span>
+                  <p>
+                    Attualmente iscritto all'Universita degli Studi di Messina, facolta di Scienze
+                    Informatiche.
+                  </p>
+                </article>
+                <article class="about-detail-card">
+                  <span class="about-label">Disponibilita</span>
+                  <p>
+                    Coordinamento team in 7+ progetti. Aperto a assunzioni full-time, freelance,
+                    partnership tecniche e mentoring in sviluppo software.
+                  </p>
+                </article>
+              </div>
             </div>
-            <div class="hero-visual">
-                <div class="hero-avatar"><!--<img src="" height="100%" width="100%">--></div>
-                <div class="floating-card card-1">
-                    <div class="card-icon">🐍</div>
-                    <p>Python</p>
-                </div>
-                <div class="floating-card card-2">
-                    <div class="card-icon">⚙️</div>
-                    <p>Node.js</p>
-                </div>
-                <div class="floating-card card-3">
-                    <div class="card-icon">🤖</div>
-                    <p>AI/APIs</p>
-                </div>
-            </div>
+          </article>
         </div>
-        <div class="scroll-indicator">
-            <span></span>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <h2 class="section-title reveal">Competenze Tecniche</h2>
+          <div class="cards-grid skills-grid">
+            <article class="glass-card glass-card-hover highlight reveal">
+              <h3>&#128308; Core Languages</h3>
+              <div class="tag-list">
+                <span>Python</span>
+                <span>JavaScript/Node.js</span>
+                <span>HTML5/CSS3</span>
+              </div>
+            </article>
+            <article class="glass-card glass-card-hover reveal">
+              <h3>&#9889; Full-Stack Dev</h3>
+              <div class="tag-list">
+                <span>REST API</span>
+                <span>SQL</span>
+                <span>Responsive Design</span>
+              </div>
+            </article>
+            <article class="glass-card glass-card-hover highlight reveal">
+              <h3>&#129302; AI &amp; Automation</h3>
+              <div class="tag-list">
+                <span>LLM/AI API Integration</span>
+                <span>Bot Development</span>
+                <span>Machine Learning basics</span>
+              </div>
+            </article>
+            <article class="glass-card glass-card-hover reveal">
+              <h3>&#9881;&#65039; Systems &amp; Hardware</h3>
+              <div class="tag-list">
+                <span>Assemblaggio PC</span>
+                <span>Troubleshooting HW</span>
+                <span>Configurazione Reti</span>
+                <span>Raspberry Pi</span>
+                <span>Linux/Unix</span>
+              </div>
+            </article>
+            <article class="glass-card glass-card-hover reveal">
+              <h3>&#128218; Other Languages</h3>
+              <div class="tag-list">
+                <span>Java (OOP)</span>
+                <span>C/C++</span>
+                <span>PHP</span>
+              </div>
+            </article>
+            <article class="glass-card glass-card-hover reveal">
+              <h3>&#127912; Creative Tools</h3>
+              <div class="tag-list">
+                <span>Adobe Photoshop</span>
+                <span>Adobe Premiere Pro</span>
+              </div>
+            </article>
+            <article class="glass-card glass-card-hover highlight reveal">
+              <h3>&#127942; Certifications</h3>
+              <div class="tag-list">
+                <span>Cisco IT-Essentials</span>
+                <span>Cisco Get Connected</span>
+                <span>Cisco CCNAv7</span>
+                <span>Anthropic Claude 101</span>
+                <span>Anthropic Agent Skills</span>
+              </div>
+            </article>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- ABOUT ME SECTION -->
-    <section id="about-me" class="about-me">
-        <div class="section-container">
-            <h2 class="section-title">Chi Sono</h2>
-            <div class="about-me-content">
-                <div class="about-me-image">
-                    <img src="images/pic.jpeg" alt="Carmelo Alessandro - Full-Stack Developer">
-                </div>
-                <div class="about-me-text">
-                    <h3>Carmelo Alessandro</h3>
-                    <p class="about-me-intro">Full-Stack Developer | AI & Automation Specialist</p>
-                    <div class="about-me-details">
-                        <div class="detail-section">
-                            <p>
-                                Sono uno sviluppatore full-stack con <strong>focus su problemi reali</strong>: 
-                                da portali web per messaggi vocali (HTML5) a sistemi API scalabili, 
-                                botnet intelligenti e piattaforme production-ready.
-                            </p>
-                                <br>
-                            <p>
-                                <strong>Specializzazione:</strong> integrazione AI, REST API, automazione software, 
-                                sistemi embedded. Fluente in Python, JavaScript/Node.js, Java, C/C++. 
-                                Certificazioni Cisco (IT Essentials, Get Connected, CCNAv7).
-                            </p>
-                                <br>
-                            <p>
-                                <strong>Leadership:</strong> coordinamento team in 7+ progetti (robotica, competizioni informatiche). 
-                                Approccio orientato a architetture scalabili, code quality e delivery reliable.
-                            </p>
-                            <br>
-                            <p>
-                                <strong>Disponibile per:</strong> assunzioni full-time, contratti freelance, 
-                                partnership tecniche e mentorato in sviluppo software.
-                            </p>
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SKILLS SECTION -->
-    <section id="skills" class="skills">
-        <div class="section-container">
-            <h2 class="section-title">Competenze Tecniche</h2>
-            <div class="skills-grid">
-                <!-- Core Languages -->
-                <div class="skill-category featured">
-                    <h3>🔴 Core Languages</h3>
-                    <div class="skill-items">
-                        <span class="skill-badge premium">Python</span>
-                        <span class="skill-badge premium">JavaScript/Node.js</span>
-                        <span class="skill-badge premium">HTML5/CSS3</span>
-                    </div>
-                </div>
-
-                <!-- Full-Stack Development -->
-                <div class="skill-category">
-                    <h3>⚡ Full-Stack Dev</h3>
-                    <div class="skill-items">
-                        <span class="skill-badge">REST API</span>
-                        <span class="skill-badge">SQL</span>
-                        <span class="skill-badge">Responsive Design</span>
-                    </div>
-                </div>
-
-                <!-- AI & Automation -->
-                <div class="skill-category featured">
-                    <h3>🤖 AI & Automation</h3>
-                    <div class="skill-items">
-                        <span class="skill-badge premium">Machine Learning basics</span>
-                        <span class="skill-badge premium">Bot Development</span>
-                        <span class="skill-badge premium">API Integration</span>
-                    </div>
-                </div>
-
-                <!-- Systems & IoT -->
-                <div class="skill-category">
-                    <h3>⚙️ Systems & IoT</h3>
-                    <div class="skill-items">
-                        <span class="skill-badge">Raspberry Pi</span>
-                        <span class="skill-badge">Embedded Systems</span>
-                        <span class="skill-badge">Linux/Unix</span>
-                    </div>
-                </div>
-
-                <!-- Other Languages -->
-                <div class="skill-category">
-                    <h3>📚 Other Languages</h3>
-                    <div class="skill-items">
-                        <span class="skill-badge">Java</span>
-                        <span class="skill-badge">C/C++</span>
-                        <span class="skill-badge">PHP</span>
-                    </div>
-                </div>
-
-                <!-- Networking & Certifications -->
-                <div class="skill-category">
-                    <h3>🏆 Certifications</h3>
-                    <div class="skill-items">
-                        <span class="skill-badge">Cisco IT Essentials</span>
-                        <span class="skill-badge">Cisco Get Connected</span>
-                        <span class="skill-badge">CCNAv7</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SERVICES SECTION -->
-    <section id="services" class="services">
-        <div class="section-container">
+      <section class="section">
+        <div class="container">
+          <div class="section-heading reveal">
             <h2 class="section-title">Collaborazioni &amp; Expertise</h2>
-            <p class="section-subtitle">Cosa posso fare per il tuo progetto</p>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🌐</div>
-                    <h3>Web Full-Stack</h3>
-                    <p><strong>Da zero a production.</strong> Siti, web app, backend APIs. Responsive, performant, scalabile.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🔗</div>
-                    <h3>API Integration</h3>
-                    <p><strong>Connetti i tuoi sistemi.</strong> Automazione middleware, webhook, terze parti, sincronizzazione real-time.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🤖</div>
-                    <h3>Bot & Automation</h3>
-                    <p><strong>Lavora mentre dormi.</strong> Discord bot, Telegram, sistemi automatizzati custom. Scalabili e manutenibili.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">⚙️</div>
-                    <h3>Ottimizzazione Performance</h3>
-                    <p><strong>Fai girare le cose veloce.</strong> Code profiling, caching, database optimization, DevOps.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🎓</div>
-                    <h3>Code Review & Mentoring</h3>
-                    <p><strong>Migliora il tuo team.</strong> Architecture review, best practices, knowledge sharing, tecnico-mentoring.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🛰️</div>
-                    <h3>Embedded & IoT</h3>
-                    <p><strong>Dal sensore al cloud.</strong> Raspberry Pi, Arduino, integrazione hw/sw, real-time systems.</p>
-                </div>
-            </div>
+            <p>Cosa posso fare per il tuo progetto</p>
+          </div>
+          <div class="cards-grid services-grid">
+            <article class="glass-card glass-card-hover reveal">
+              <h3>&#127760; Web Full-Stack</h3>
+              <p>Da zero a production. Siti, web app, backend APIs. Responsive, performant, scalabile.</p>
+            </article>
+            <article class="glass-card glass-card-hover reveal">
+              <h3>&#128279; API Integration</h3>
+              <p>Connetti i tuoi sistemi. Automazione middleware, webhook, terze parti, sincronizzazione real-time.</p>
+            </article>
+            <article class="glass-card glass-card-hover reveal">
+              <h3>&#129302; Bot &amp; Automation</h3>
+              <p>Lavora mentre dormi. Discord bot, Telegram, sistemi automatizzati custom. Scalabili e manutenibili.</p>
+            </article>
+            <article class="glass-card glass-card-hover reveal">
+              <h3>&#9881;&#65039; Ottimizzazione Performance</h3>
+              <p>Fai girare le cose veloce. Code profiling, caching, database optimization, DevOps.</p>
+            </article>
+            <article class="glass-card glass-card-hover reveal">
+              <h3>&#127891; Code Review &amp; Mentoring</h3>
+              <p>Migliora il tuo team. Architecture review, best practices, knowledge sharing, tecnico-mentoring.</p>
+            </article>
+            <article class="glass-card glass-card-hover reveal">
+              <h3>&#128752;&#65039; Embedded &amp; IoT</h3>
+              <p>Dal sensore al cloud. Raspberry Pi, Arduino, integrazione hw/sw, real-time systems.</p>
+            </article>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- PROJECTS SECTION AS CASE STUDIES -->
-    <section id="projects" class="projects">
-        <div class="section-container">
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-heading reveal">
             <h2 class="section-title">Progetti &amp; Case Studies</h2>
-            <p class="section-subtitle">Problemi risolti. Sistemi realizzati.</p>
-            <div class="projects-grid">
-                <!-- Project 1: Voice Messaging Portal -->
-                <div class="project-card case-study">
-                    <div class="project-badge">Audio Integration</div>
-                    <h3 class="project-title">Portale Messaggi Vocali</h3>
-                    <div class="case-study-content">
-                        <div class="case-section">
-                            <h4>🎯 Challenge</h4>
-                            <p>Evento necessita sistema per condividere messaggi vocali senza installare app. Vincoli: browser-based, mobile-compatible, registrazione real-time, invio email affidabile.</p>
-                        </div>
-                        <div class="case-section">
-                            <h4>✅ Soluzione</h4>
-                            <p>Portale web full-stack con registrazione audio nel browser, invio via email, storage cloud. Interfaccia intuitiva per desktop e mobile (iOS/Android). Protezione anti-spam integrata.</p>
-                        </div>
-                        <div class="case-section">
-                            <h4>⚙️ Architettura</h4>
-                            <p>MediaRecorder API per acquisizione audio client-side. EmailJS per invio email serverless. Cloudinary per gestione persistente e CDN dei file audio. Responsive design con fallback graceful per browser legacy. Rate limiting e validazione client-server.</p>
-                        </div>
-                        <div class="case-tech">
-                            <span class="tech-tag">HTML5/CSS3</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">EmailJS</span>
-                            <span class="tech-tag">Cloudinary</span>
-                        </div>
-                    </div>
-                    <a href="https://github.com/hemerale" target="_blank" class="btn btn-small">GitHub →</a>
-                </div>
+            <p>Problemi risolti. Sistemi realizzati.</p>
+          </div>
+          <div class="cards-grid projects-grid">
+            <article class="glass-card glass-card-hover project-card reveal">
+              <span class="project-badge">Audio Integration</span>
+              <h3>Portale Messaggi Vocali</h3>
+              <p><strong>Challenge</strong> Evento necessita sistema per condividere messaggi vocali senza installare app. Browser-based, mobile-compatible, registrazione real-time.</p>
+              <p><strong>Soluzione</strong> Portale web full-stack con registrazione audio nel browser, invio via email, storage cloud. Interfaccia intuitiva per desktop e mobile.</p>
+              <p><strong>Architettura</strong> MediaRecorder API client-side. EmailJS per invio serverless. Cloudinary per CDN audio.</p>
+              <div class="tag-list">
+                <span>HTML5/CSS3</span>
+                <span>JavaScript</span>
+                <span>EmailJS</span>
+                <span>Cloudinary</span>
+              </div>
+              <a class="button button-primary compact" href="https://github.com/hemerale" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
+            </article>
 
-                <!-- Project 2: Discord Bot -->
-                <div class="project-card case-study">
-                    <div class="project-badge">Automazione</div>
-                    <h3 class="project-title">M4croBot - Discord Platform</h3>
-                    <div class="case-study-content">
-                        <div class="case-section">
-                            <h4>🎯 Problema</h4>
-                            <p>Server Discord necessita di automazione moderazione, gestione eventi e integrazioni API esterne. Ricerca di soluzione scalabile e manutenibile.</p>
-                        </div>
-                        <div class="case-section">
-                            <h4>✅ Soluzione</h4>
-                            <p>Bot Node.js con architettura modulare, command handler avanzato, e webhook integration. Implementati sistemi di logging, error handling, e performance monitoring.</p>
-                        </div>
-                        <div class="case-section">
-                            <h4>⚙️ Architettura</h4>
-                            <p>Bot sviluppato con Node.js e Discord.JS eseguito su server remoto. Tutta la logica di comando, moderazione e interazioni è gestita dal bot lato server, senza database complessi o backend separato.  Le API esterne vengono interrogate direttamente dal bot quando necessario.</p>
-                        </div>
-                        <div class="case-tech">
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">discord.js</span>
-                            <span class="tech-tag">REST API</span>
-                            <span class="tech-tag">Automazione</span>
-                        </div>
-                    </div>
-                    <a href="https://github.com/hemerale/m4crobot.git" target="_blank" class="btn btn-small">GitHub →</a>
-                </div>
+            <article class="glass-card glass-card-hover project-card reveal">
+              <span class="project-badge">Automazione</span>
+              <h3>M4croBot - Discord Platform</h3>
+              <p><strong>Challenge</strong> Server Discord necessita automazione moderazione, gestione eventi e integrazioni API esterne.</p>
+              <p><strong>Soluzione</strong> Bot Node.js modulare con command handler avanzato, webhook integration, logging e error handling.</p>
+              <p><strong>Architettura</strong> Node.js + Discord.js su server remoto. Logica di comando e moderazione gestita lato server.</p>
+              <div class="tag-list">
+                <span>Node.js</span>
+                <span>discord.js</span>
+                <span>REST API</span>
+                <span>Automazione</span>
+              </div>
+              <a class="button button-primary compact" href="https://github.com/hemerale/m4crobot.git" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
+            </article>
 
-                <!-- Project 3: Chrome Extension -->
-                <div class="project-card case-study">
-                    <div class="project-badge">Productivity</div>
-                    <h3 class="project-title">Guidaldi - Chrome Extension</h3>
-                    <div class="case-study-content">
-                        <div class="case-section">
-                            <h4>🎯 Problema</h4>
-                            <p>Ricerca web frammentata e inefficiente. Necessità di strumento centralizzato per aggregare risultati e salvare workflow di ricerca.</p>
-                        </div>
-                        <div class="case-section">
-                            <h4>✅ Soluzione</h4>
-                            <p>Estensione Chrome con dashboard personalizzata. Integrazione multi-API (Google, DuckDuckGo, Wikipedia). Storage cloud e sincronizzazione cross-device con IndexedDB.</p>
-                        </div>
-                        <div class="case-section">
-                            <h4>⚙️ Architettura</h4>
-                            <p>Applicazione interamente client-side come estensione Chrome. Utilizza JavaScript per aggiornare orologio, meteo e barra di ricerca in tempo reale. L’integrazione con OpenWeatherMap avviene tramite chiamate API pubbliche direttamente dal browser.</p>
-                        </div>
-                        <div class="case-tech">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Chrome API</span>
-                            <span class="tech-tag">REST API</span>
-                            
-                        </div>
-                    </div>
-                    <a href="https://github.com/hemerale/Guidaldi.git" target="_blank" class="btn btn-small">GitHub →</a>
-                </div>
-            </div>
+            <article class="glass-card glass-card-hover project-card reveal">
+              <span class="project-badge">Productivity</span>
+              <h3>Guidaldi - Chrome Extension</h3>
+              <p><strong>Challenge</strong> Ricerca web frammentata. Necessita di strumento centralizzato per aggregare risultati.</p>
+              <p><strong>Soluzione</strong> Estensione Chrome con dashboard personalizzata. Integrazione multi-API e sync cross-device.</p>
+              <p><strong>Architettura</strong> Client-side Chrome extension. JavaScript per orologio, meteo e ricerca in tempo reale.</p>
+              <div class="tag-list">
+                <span>JavaScript</span>
+                <span>Chrome API</span>
+                <span>REST API</span>
+              </div>
+              <a class="button button-primary compact" href="https://github.com/hemerale/Guidaldi.git" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
+            </article>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- WORKING PROCESS SECTION -->
-    <section id="process" class="working-process">
-        <div class="section-container">
+      <section class="section">
+        <div class="container">
+          <div class="section-heading reveal">
             <h2 class="section-title">Come Lavoro</h2>
-            <p class="section-subtitle">Metodologia, approccio, risultati</p>
-            <div class="process-timeline">
-                <div class="process-step">
-                    <div class="step-number">01</div>
-                    <h3>Scoperta &amp; Analisi</h3>
-                    <p>Analizo il problema, definisco scope e requisiti. Goal: capire il valore prima di codare.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">02</div>
-                    <h3>Architettura &amp; Design</h3>
-                    <p>Progetto l'architettura scalabile, scelgo le tecnologie giuste, preparo documentazione tecnica.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">03</div>
-                    <h3>Sviluppo Iterativo</h3>
-                    <p>Implementazione con code review continuo, testing layer-by-layer, documentazione inline.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">04</div>
-                    <h3>Ottimizzazione &amp; Deploy</h3>
-                    <p>Performance tuning, security audit, deployment smart, monitoraggio post-launch.</p>
-                </div>
-            </div>
-            
-            <div class="availability-section">
-                <h3>Disponibilità &amp; Modalità</h3>
-                <div class="availability-grid">
-                    <div class="availability-card">
-                        <h4>💼 Full-Time</h4>
-                        <p><strong>Status:</strong> Disponibile per assunzioni immediate</p>
-                        <p><strong>Focus:</strong> Posizioni in full-stack dev, team tech</p>
-                    </div>
-                    <div class="availability-card">
-                        <h4>🎯 Freelance</h4>
-                        <p><strong>Status:</strong> Progetti selezionati</p>
-                        <p><strong>Approccio:</strong> Flessibile e orientato ai risultati</p>
-                    </div>
-                    <div class="availability-card">
-                        <h4>🤝 Partnership</h4>
-                        <p><strong>Status:</strong> Collaborazioni tech aperte</p>
-                        <p><strong>interesse:</strong> Startup, API integration, mentoring</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <p>Metodologia, approccio, risultati</p>
+          </div>
+          <div class="workflow-grid">
+            <article class="glass-card glass-card-hover reveal">
+              <span class="step-index">01</span>
+              <h3>Scoperta &amp; Analisi</h3>
+              <p>Analizzo il problema, definisco scope e requisiti. Capire il valore prima di codare.</p>
+            </article>
+            <article class="glass-card glass-card-hover reveal">
+              <span class="step-index">02</span>
+              <h3>Architettura &amp; Design</h3>
+              <p>Architettura scalabile, tecnologie giuste, documentazione tecnica.</p>
+            </article>
+            <article class="glass-card glass-card-hover reveal">
+              <span class="step-index">03</span>
+              <h3>Sviluppo Iterativo</h3>
+              <p>Code review continuo, testing layer-by-layer, documentazione inline.</p>
+            </article>
+            <article class="glass-card glass-card-hover reveal">
+              <span class="step-index">04</span>
+              <h3>Ottimizzazione &amp; Deploy</h3>
+              <p>Performance tuning, security audit, deployment e monitoraggio.</p>
+            </article>
+          </div>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="contact">
-        <div class="section-container">
+          <div class="availability-grid">
+            <article class="glass-card reveal">
+              <h3>&#128188; Full-Time</h3>
+              <p><strong>Status:</strong> Disponibile per assunzioni immediate</p>
+              <p><strong>Focus:</strong> Posizioni in full-stack dev, team tech</p>
+            </article>
+            <article class="glass-card reveal">
+              <h3>&#127919; Freelance</h3>
+              <p><strong>Status:</strong> Progetti selezionati</p>
+              <p><strong>Focus:</strong> Flessibile e orientato ai risultati</p>
+            </article>
+            <article class="glass-card reveal">
+              <h3>&#129309; Partnership</h3>
+              <p><strong>Status:</strong> Collaborazioni tech aperte</p>
+              <p><strong>Focus:</strong> Startup, API integration, mentoring</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-heading reveal">
             <h2 class="section-title">Contattami</h2>
-            <p class="contact-intro">Progetto, domanda, collaborazione. Scrivi e rispondo in 24h.</p>
-            
-            <div class="contact-content">
-                <!-- Contact Form -->
-                <div class="contact-form-wrapper">
-                    <form id="contactForm" class="contact-form">
-                        <div class="form-group">
-                            <label for="user_name">Nome</label>
-                            <input type="text" id="user_name" name="user_name" required placeholder="Il tuo nome">
-                        </div>
+            <p>Progetto, domanda, collaborazione. Scrivi e rispondo in 24h.</p>
+          </div>
 
-                        <div class="form-group">
-                            <label for="user_email">Email</label>
-                            <input type="email" id="user_email" name="user_email" required placeholder="La tua email">
-                        </div>
+          <div class="contact-grid">
+            <form id="contactForm" class="glass-card contact-form reveal">
+              <label>
+                <span>Nome</span>
+                <input id="user_name" name="user_name" type="text" placeholder="Il tuo nome" required>
+              </label>
+              <label>
+                <span>Email</span>
+                <input id="user_email" name="user_email" type="email" placeholder="La tua email" required>
+              </label>
+              <label>
+                <span>Messaggio</span>
+                <textarea id="message" name="message" rows="5" placeholder="Il tuo messaggio..." required></textarea>
+              </label>
+              <button class="button button-primary" type="submit">Invia Messaggio</button>
+            </form>
 
-                        <div class="form-group">
-                            <label for="message">Messaggio</label>
-                            <textarea id="message" name="message" required placeholder="Il tuo messaggio..."></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">Invia Messaggio</button>
-                    </form>
-                </div>
-
-                <!-- Contact Info -->
-                <div class="contact-info">
-                    <a href="mailto:heme.alessandro@gmail.com" class="contact-social-link" title="Email">
-                        <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                        <span>heme.alessandro@gmail.com</span>
-                    </a>
-                    <a href="https://github.com/hemerale" target="_blank" class="contact-social-link" title="GitHub">
-                        <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
-                        </svg>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/carmelo-alessandro-922814395/" target="_blank" class="contact-social-link" title="LinkedIn">
-                        <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.731-2.004 1.439-.103.25-.129.599-.129.948v5.418h-3.554s.047-8.789 0-9.708h3.554v1.375c.427-.659 1.191-1.595 2.897-1.595 2.117 0 3.705 1.388 3.705 4.374v5.554zM5.337 6.556a2.06 2.06 0 1 1 .001-4.12 2.06 2.06 0 0 1-.001 4.12zm1.778 13.896H3.561V8.744h3.554v11.708zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"></path>
-                        </svg>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://instagram.com/hemeralee" target="_blank" class="contact-social-link" title="Instagram">
-                        <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.015-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.322a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"></path>
-                        </svg>
-                        <span>@hemeralee</span>
-                    </a>
-                </div>
+            <div class="contact-links reveal">
+              <a class="glass-card contact-link" href="mailto:heme.alessandro@gmail.com">
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>heme.alessandro@gmail.com</span>
+              </a>
+              <a class="glass-card contact-link" href="https://github.com/hemerale" target="_blank" rel="noopener noreferrer">
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+                </svg>
+                <span>GitHub</span>
+              </a>
+              <a class="glass-card contact-link" href="https://www.linkedin.com/in/carmelo-alessandro-922814395/" target="_blank" rel="noopener noreferrer">
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.731-2.004 1.439-.103.25-.129.599-.129.948v5.418h-3.554s.047-8.789 0-9.708h3.554v1.375c.427-.659 1.191-1.595 2.897-1.595 2.117 0 3.705 1.388 3.705 4.374v5.554zM5.337 6.556a2.06 2.06 0 1 1 .001-4.12 2.06 2.06 0 0 1-.001 4.12zm1.778 13.896H3.561V8.744h3.554v11.708zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"></path>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+              <a class="glass-card contact-link" href="https://instagram.com/hemeralee" target="_blank" rel="noopener noreferrer">
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.015-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.322a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"></path>
+                </svg>
+                <span>@hemeralee</span>
+              </a>
+              <a class="button button-secondary full" href="https://hemerale.github.io/CV.pdf" target="_blank" rel="noopener noreferrer">Scarica CV (PDF)</a>
             </div>
-
-            <div class="contact-cta">
-                <a href="CV.pdf" class="btn btn-secondary">Scarica CV (PDF)</a>
-            </div>
+          </div>
         </div>
-    </section>
+      </section>
+    </main>
+  </div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-
